@@ -171,6 +171,9 @@ formEjercicio7.addEventListener('submit', (e) => {
 });
 //CODIGO EJERCICIO 7
 //CODIGO EJERCICIO 7
+
+//CODIGO EJERCICIO 8
+//CODIGO EJERCICIO 8
 const formEjercicio8 = document.querySelector('.ejercicio-8-form');
 let ej8array = [];
 formEjercicio8.addEventListener('submit', (e) => {
@@ -199,3 +202,47 @@ formEjercicio8.addEventListener('submit', (e) => {
 
 	e.target.reset();
 });
+//CODIGO EJERCICIO 8
+//CODIGO EJERCICIO 8
+
+//CODIGO EJERCICIO 9
+//CODIGO EJERCICIO 9
+const formEjercicio9 = document.querySelector('.ejercicio-9-form');
+
+formEjercicio9.addEventListener('submit', (e) => {
+	const response = document.querySelector('.response-ejercicio-9');
+	e.preventDefault();
+
+	const inptName = `ej-9-Input`;
+	response.innerText = e.target[inptName].value
+		.split('')
+		.map((l) => (l += ' '))
+		.join()
+		.replace(/,/g, ' ');
+
+	e.target.reset();
+});
+
+//CODIGO EJERCICIO 9
+//CODIGO EJERCICIO 9
+
+//CODIGO EJERCICIO 10
+//CODIGO EJERCICIO 10
+const formEjercicio10 = document.querySelector('.ejercicio-10-form');
+
+formEjercicio10.addEventListener('submit', (e) => {
+	const response = document.querySelector('.response-ejercicio-10');
+	e.preventDefault();
+
+	const inptName = `ej-10-Input`;
+	response.innerText = e.target[inptName].value
+		.split('')
+		.reverse()
+		.join()
+		.replace(/,/g, '');
+
+	e.target.reset();
+});
+
+//CODIGO EJERCICIO 10
+//CODIGO EJERCICIO 10
