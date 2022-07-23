@@ -624,7 +624,7 @@ document.querySelector('.ej23response').innerHTML = 'respuesta = '.concat(
 //CODIGO EJERCICIO24
 const formEjercicio24 = document.querySelector('.ejercicio-24-form');
 const range = document.querySelector('.form-range');
-console.log(range);
+
 // range.ondrag = (e) => {
 // 	return console.log(e.target.value);
 // };
@@ -679,3 +679,20 @@ formEjercicio24.addEventListener('submit', (e) => {
 
 //CODIGO EJERCICIO24
 //CODIGO EJERCICIO24
+
+//CODIGO EJERCICIO25
+//CODIGO EJERCICIO25
+const formEjercicio25 = document.querySelector('.formEj25');
+const handleFormEj25 = (e) => {
+	e.preventDefault();
+	const inputs = formEjercicio25.querySelectorAll('input');
+	let formData = '';
+	inputs.forEach((input) => {
+		formData += `<li> ${input.name} : ${input.value}</li>`;
+	});
+	document.querySelector('.formEj25Data').innerHTML = formData;
+};
+formEjercicio25.addEventListener('submit', handleFormEj25);
+
+//CODIGO EJERCICIO25
+//CODIGO EJERCICIO25
