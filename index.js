@@ -578,7 +578,7 @@ formEjercicio21.addEventListener('submit', (e) => {
 	}
 	// ${loopThroughData(formData).join().replace(/,/g, ' ')}
 	response.innerHTML = `informacion formulario
-					<ul>$
+					<ul>
 						${formData
 							.map((value) => `<li>${value}</li>`)
 							.join()
