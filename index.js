@@ -262,10 +262,7 @@ formEjercicio11.addEventListener('submit', (e) => {
 	e.preventDefault();
 
 	const inptName = `ej-11-Input`;
-	response.insertAdjacentText(
-		'beforeend',
-		getLongestWord(e.target[inptName].value)
-	);
+	response.innerText = getLongestWord(e.target[inptName].value);
 
 	e.target.reset();
 });
